@@ -181,10 +181,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             "\t" + "1. Create Account" + Environment.NewLine +
             "\t" + "2. Sign In" + Environment.NewLine +
             "\t" + "3. Rules" + Environment.NewLine +
-            "\t" + "4. View Current Game Stats" + Environment.NewLine +
-            "\t" + "5. View Historic Game Stats" + Environment.NewLine +
-            "\t" + "6. Play Round" + Environment.NewLine +
-            "\t" + "7. Quit" + Environment.NewLine);
+            //"\t" + "4. View Current Game Stats" + Environment.NewLine +
+            //"\t" + "5. View Historic Game Stats" + Environment.NewLine +
+            "\t" + "5. Play Round" + Environment.NewLine +
+            "\t" + "6. Quit" + Environment.NewLine);
 
             Console.WriteLine();
             Console.WriteLine();
@@ -206,22 +206,16 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     menuChoice = MenuOption.GameRules;
                     DisplayGameRules();
                     break;
-                case '4':
-                    menuChoice = MenuOption.ViewCurrentGameResults;
-                    break;
                 case '5':
-                    menuChoice = MenuOption.ViewPastGameResultsScores;
-                    break;
-                case '6':
                     menuChoice = MenuOption.PlayNewRound;
                     break;
-                case '7':
+                case '6':
                     menuChoice = MenuOption.Quit;
                     break;
                 default:
                     break;
             }
-
+        
             return menuChoice;
         }
 

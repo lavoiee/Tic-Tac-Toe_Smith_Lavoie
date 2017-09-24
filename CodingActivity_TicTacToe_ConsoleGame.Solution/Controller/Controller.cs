@@ -56,7 +56,6 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         private void DisplayMenu()
         {
             MenuOption menuChoice;
-            _gameView.DisplayMenuFooter();
 
             menuChoice = _gameView.DisplayGetMenuChoice();
 
