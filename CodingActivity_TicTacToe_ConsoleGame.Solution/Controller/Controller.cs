@@ -79,11 +79,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         public void PlayGame()
         {
             _gameView.DisplayWelcomeScreen();
-
+ 
             while (_playingGame)
             {
-                
-                
+                               
                 //
                 // Round loop
                 //
@@ -100,7 +99,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     // Evaluate and update the current game board state
                     //
                     _gameboard.UpdateGameboardState();
-                    ConsoleUtil.DisplayMenuFooter();
+                    _gameView.DisplayMenuFooter();
 
                 }
 
@@ -151,7 +150,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 case ConsoleView.ViewState.Active:
 
                     _gameView.DisplayGameArea();
-                    _gameView.DisplayMenu();
+                    _gameView.DisplayMenuFooter();
 
 
                     switch (_gameboard.CurrentRoundState)

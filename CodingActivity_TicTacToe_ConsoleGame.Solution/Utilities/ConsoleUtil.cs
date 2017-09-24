@@ -110,11 +110,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         /// <summary>
         /// Display menu in footer section
         /// </summary>
-        public static void DisplayMenuFooter()
-        {
-            
-            Console.Write("[C]reate Account  [S]ign In  [D]ifficulty  [N]ew Round  [Q]uit");
-        }
+        
 
         /// <summary>
         /// reset display to default size and colors including the header

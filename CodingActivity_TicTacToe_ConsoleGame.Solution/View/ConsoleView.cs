@@ -118,9 +118,15 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             System.Environment.Exit(1);
         }
 
-        public void DisplayMenu()
+        public void DisplayMenuFooter()
         {
-            ConsoleUtil.DisplayMenuFooter();
+
+            Console.WriteLine("[C]reate Account  [D]ifficulty  [I]nstructions  [N]ew Round  [Q]uit  [S]ign In");
+        }
+
+        public void DisplayAccountCreationPrompt()
+        {
+            Console.WriteLine("Please make a menu selection");
         }
 
         /// <summary>
