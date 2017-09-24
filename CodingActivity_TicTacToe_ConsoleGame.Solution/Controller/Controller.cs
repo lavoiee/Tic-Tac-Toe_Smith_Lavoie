@@ -82,6 +82,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
 
             while (_playingGame)
             {
+                _gameView.DisplayMenu();
                 //
                 // Round loop
                 //

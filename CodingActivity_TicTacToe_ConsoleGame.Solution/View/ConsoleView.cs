@@ -118,6 +118,11 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             System.Environment.Exit(1);
         }
 
+        public void DisplayMenu()
+        {
+            ConsoleUtil.DisplayMenuFooter();
+        }
+
         /// <summary>
         /// display the session timed out screen
         /// </summary>
