@@ -118,6 +118,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                         _gameView.InitializeView();
                         _playingRound = true;
                     }
+                    else
+                    {
+                        _gameView.DisplayClosingScreen();
+                    }
                 }
                 //
                 // Major user error recorded, end game
