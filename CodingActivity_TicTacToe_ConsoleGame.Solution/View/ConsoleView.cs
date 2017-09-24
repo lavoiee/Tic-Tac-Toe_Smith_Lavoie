@@ -190,7 +190,42 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             Console.WriteLine();
             ConsoleUtil.DisplayPromptMessage("Select a menu option [number]:");
 
+            ConsoleKeyInfo userChoice = Console.ReadKey(true);
+
+            switch (userChoice.KeyChar)
+            {
+                case '1':
+                    menuChoice = MenuOption.CreateAccount;
+                    CreateAccount();
+                    break;
+                case '2':
+                    menuChoice = MenuOption.SignIn;
+                    break;
+                case '3':
+                    menuChoice = MenuOption.GameRules;
+                    break;
+                case '4':
+                    menuChoice = MenuOption.ViewCurrentGameResults;
+                    break;
+                case '5':
+                    menuChoice = MenuOption.ViewPastGameResultsScores;
+                    break;
+                case '6':
+                    menuChoice = MenuOption.PlayNewRound;
+                    break;
+                case '7':
+                    menuChoice = MenuOption.Quit;
+                    break;
+                default:
+                    break;
+            }
+
             return menuChoice;
+        }
+
+        private void CreateAccount()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
