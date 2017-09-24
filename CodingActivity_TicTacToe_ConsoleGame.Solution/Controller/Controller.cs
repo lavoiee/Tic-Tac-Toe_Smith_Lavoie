@@ -82,28 +82,33 @@ namespace CodingActivity_TicTacToe_ConsoleGame
 
             while (_playingGame)
             {
+                
                 _gameView.DisplayMenu();
                 //
                 // Round loop
                 //
                 while (_playingRound)
                 {
+                    
                     //
                     // Perform the task associated with the current game and round state
                     //
                     ManageGameStateTasks();
 
+
                     //
                     // Evaluate and update the current game board state
                     //
                     _gameboard.UpdateGameboardState();
+                    ConsoleUtil.DisplayMenuFooter();
+
                 }
 
                 //
                 // Round Complete: Display the results
                 //
                 _gameView.DisplayCurrentGameStatus(_roundNumber, _playerXNumberOfWins, _playerONumberOfWins, _numberOfCatsGames);
-
+                
                 //
                 // Confirm no major user errors
                 //
@@ -144,7 +149,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             switch (_gameView.CurrentViewState)
             {
                 case ConsoleView.ViewState.Active:
+
                     _gameView.DisplayGameArea();
+                    _gameView.DisplayMenu();
+
 
                     switch (_gameboard.CurrentRoundState)
                     {
@@ -175,6 +183,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                             _numberOfCatsGames++;
                             _playingRound = false;
                             break;
+
 
                         default:
                             break;

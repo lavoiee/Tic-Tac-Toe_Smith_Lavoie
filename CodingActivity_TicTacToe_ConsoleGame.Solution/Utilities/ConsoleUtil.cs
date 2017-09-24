@@ -112,6 +112,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         /// </summary>
         public static void DisplayMenuFooter()
         {
+            
             Console.Write("[C]reate Account  [S]ign In  [D]ifficulty  [N]ew Round  [Q]uit");
         }
 

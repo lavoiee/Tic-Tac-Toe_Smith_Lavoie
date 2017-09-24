@@ -233,9 +233,16 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 _positionState[1, 2] == playerPieceToCheck||
                 _positionState[1, 1] == playerPieceToCheck&&
                 _positionState[2, 2] == playerPieceToCheck&&
+                _positionState[3, 3] == playerPieceToCheck||
+                _positionState[0, 0] == playerPieceToCheck&&
+                _positionState[1, 1] == playerPieceToCheck&&
+                _positionState[2, 2] == playerPieceToCheck||
+                _positionState[1, 1] == playerPieceToCheck&&
+                _positionState[2, 2] == playerPieceToCheck&&
                 _positionState[3, 3] == playerPieceToCheck)
 
-                
+
+
             {
                 return true;
             }
