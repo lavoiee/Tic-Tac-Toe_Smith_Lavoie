@@ -100,7 +100,6 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     //
                     _gameboard.UpdateGameboardState();
                     _gameView.DisplayMenuFooter();
-
                 }
 
                 //
@@ -202,6 +201,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     break;
             }
         }
+
 
         /// <summary>
         /// Attempt to get a valid player move. 
