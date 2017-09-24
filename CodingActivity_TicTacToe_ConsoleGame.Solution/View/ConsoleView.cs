@@ -118,17 +118,6 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             System.Environment.Exit(1);
         }
 
-        public void DisplayMenuFooter()
-        {
-
-            Console.WriteLine("[C]reate Account  [D]ifficulty  [N]ew Round  [Q]uit  [R]ules  [S]ign In");
-        }
-
-        public void DisplayAccountCreationPrompt()
-        {
-            Console.WriteLine("Please make a menu selection");
-        }
-
         /// <summary>
         /// display the session timed out screen
         /// </summary>
