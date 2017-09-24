@@ -208,7 +208,18 @@ namespace CodingActivity_TicTacToe_ConsoleGame
 
         private void DisplayGameRules()
         {
-            throw new NotImplementedException();
+            ConsoleUtil.DisplayReset();
+            ConsoleUtil.HeaderText = "Rules for Tic-Tac-Toe";
+            Console.WriteLine("*******************************************************************************");
+            ConsoleUtil.DisplayMessage(ConsoleUtil.Center("          Rules of the Game"));
+            Console.WriteLine("*******************************************************************************");
+            
+            ConsoleUtil.DisplayMessage(
+                "\t" + "Two players take turns placing game pieces on the board." + Environment.NewLine +
+                "\t" + "The first player to get three of their pieces in a row wins the round." + Environment.NewLine +
+                "\t" + "The three pieces can be in a horizontal, vertical, or diagonal line." + Environment.NewLine +
+                "\t" + "If neither player is able to get three pieces in a row before the board is full," + Environment.NewLine +
+                "\t" + "then a cat's game or a draw occurs." + Environment.NewLine);
         }
 
         private void SignIn()
