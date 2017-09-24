@@ -44,10 +44,6 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         public GameController()
         {
             DisplaySplashScreen();
-            //
-            // Initialize game board status
-            //
-            _gameboard.InitializeGameboard();
             DisplayMenu();
             
         }
@@ -117,7 +113,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             _playerXNumberOfWins = 0;
             _numberOfCatsGames = 0;
 
-            
+            //
+            // Initialize game board status
+            //
+            _gameboard.InitializeGameboard();
         }
 
 
