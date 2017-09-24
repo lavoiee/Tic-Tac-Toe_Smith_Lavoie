@@ -314,7 +314,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             // move cursor below header
             //
             Console.SetCursorPosition(0, GAMEBOARD_VERTICAL_LOCATION);
-
+            
             Console.Write("\t\t\t        |---+---+---+---|\n");
 
             for (int i = 0; i < 4; i++)
@@ -457,7 +457,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     //
                     else
                     {
-                        DisplayMessageBox(coordinateType + " numbers are limited to (1,2,3,4)");
+                        DisplayMessageBox(coordinateType + " numbers are limited to (1,2,3, or 4)");
                     }
                 }
                 //
@@ -465,7 +465,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 //
                 else
                 {
-                    DisplayMessageBox(coordinateType + " numbers are limited to (1,2,3,4)");
+                    DisplayMessageBox(coordinateType + " numbers are limited to (1,2,3, or 4)");
                 }
 
                 //
