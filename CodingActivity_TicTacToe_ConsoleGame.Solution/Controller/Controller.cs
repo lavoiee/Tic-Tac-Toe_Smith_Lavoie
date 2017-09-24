@@ -168,10 +168,13 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                         _gameboard.InitializeGameboard();
                         _gameView.InitializeView();
                         _playingRound = true;
+                        DisplayMenu();
                     }
                     else
                     {
+                        _playingRound = false;
                         _gameView.DisplayClosingScreen();
+                        DisplayMenu();
                     }
                 }
                 //
