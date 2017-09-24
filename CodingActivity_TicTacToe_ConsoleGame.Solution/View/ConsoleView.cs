@@ -160,7 +160,38 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             DisplayContinuePrompt();
         }
 
+        public MenuOption DisplayGetMenuChoice()
+        {
+            MenuOption menuChoice = MenuOption.None;
 
+            Console.WriteLine();
+
+            ConsoleUtil.DisplayReset();
+            ConsoleUtil.HeaderText = "Menu Choice";
+
+            Console.CursorVisible = true;
+
+            //Display the Menu//
+
+
+            Console.WriteLine();
+            Console.WriteLine(
+
+
+            "\t" + "1. Create Account" + Environment.NewLine +
+            "\t" + "2. Sign In" + Environment.NewLine +
+            "\t" + "3. Rules" + Environment.NewLine +
+            "\t" + "4. View Current Game Stats" + Environment.NewLine +
+            "\t" + "5. View Historic Game Stats" + Environment.NewLine +
+            "\t" + "6. Play Round" + Environment.NewLine +
+            "\t" + "7. Quit" + Environment.NewLine);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            ConsoleUtil.DisplayPromptMessage("Select a menu option [number]:");
+
+            return menuChoice;
+        }
 
         /// <summary>
         /// Inform the player that their position choice is not available

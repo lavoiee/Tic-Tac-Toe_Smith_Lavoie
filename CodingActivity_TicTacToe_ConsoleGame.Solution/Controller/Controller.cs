@@ -43,8 +43,46 @@ namespace CodingActivity_TicTacToe_ConsoleGame
 
         public GameController()
         {
-            InitializeGame();
-            PlayGame();
+            DisplaySplashScreen();
+            DisplayMenu();
+            
+        }
+
+        private void DisplaySplashScreen()
+        {
+            _gameView.DisplayWelcomeScreen();
+        }
+
+        private void DisplayMenu()
+        {
+            MenuOption menuChoice;
+            _gameView.DisplayMenuFooter();
+
+            menuChoice = _gameView.DisplayGetMenuChoice();
+
+            switch (menuChoice)
+            {
+                case MenuOption.None:
+                    break;
+                case MenuOption.PlayNewRound:
+                    InitializeGame();
+                    PlayGame();
+                    break;
+                case MenuOption.GameRules:
+                    break;
+                case MenuOption.Instructions:
+                    break;
+                case MenuOption.ViewCurrentGameResults:
+                    break;
+                case MenuOption.ViewPastGameResultsScores:
+                    break;
+                case MenuOption.SaveGameResults:
+                    break;
+                case MenuOption.Quit:
+                    break;
+                default:
+                    break;
+            }
         }
 
         #endregion
@@ -78,11 +116,11 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         /// </summary>
         public void PlayGame()
         {
-            _gameView.DisplayWelcomeScreen();
+            
  
             while (_playingGame)
             {
-                               
+                
                 //
                 // Round loop
                 //
@@ -99,7 +137,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     // Evaluate and update the current game board state
                     //
                     _gameboard.UpdateGameboardState();
-                    _gameView.DisplayMenuFooter();
+                    
                 }
 
                 //
