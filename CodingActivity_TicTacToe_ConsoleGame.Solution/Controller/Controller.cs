@@ -44,6 +44,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         public GameController()
         {
             DisplaySplashScreen();
+            //
+            // Initialize game board status
+            //
+            _gameboard.InitializeGameboard();
             DisplayMenu();
             
         }
@@ -67,17 +71,27 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     InitializeGame();
                     PlayGame();
                     break;
-                case MenuOption.GameRules:
+                case MenuOption.SignIn:
+                    DisplayMenu();
                     break;
-                case MenuOption.Instructions:
+                case MenuOption.GameRules:
+                    _gameView.DisplayGameRules();
+                    _gameView.DisplayContinuePrompt();
+                    DisplayMenu();
                     break;
                 case MenuOption.ViewCurrentGameResults:
+                    _gameView.DisplayCurrentGameStatus(_roundNumber, _playerXNumberOfWins, _playerONumberOfWins, _numberOfCatsGames);
+                    DisplayMenu();
                     break;
                 case MenuOption.ViewPastGameResultsScores:
+                    _gameView.DisplayPastGameStats();
+                    DisplayMenu();
                     break;
                 case MenuOption.SaveGameResults:
+                    DisplayMenu();
                     break;
                 case MenuOption.Quit:
+                    _gameView.DisplayExitPrompt();
                     break;
                 default:
                     break;
@@ -103,10 +117,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             _playerXNumberOfWins = 0;
             _numberOfCatsGames = 0;
 
-            //
-            // Initialize game board status
-            //
-            _gameboard.InitializeGameboard();
+            
         }
 
 

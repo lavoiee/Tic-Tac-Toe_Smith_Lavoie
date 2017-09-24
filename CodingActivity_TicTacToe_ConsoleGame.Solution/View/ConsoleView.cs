@@ -101,6 +101,11 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             Console.CursorVisible = true;
         }
 
+        internal void DisplayPastGameStats()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// display the Exit prompt on a clean screen
         /// </summary>
@@ -171,7 +176,9 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             "\t" + "2. Sign In" + Environment.NewLine +
             "\t" + "3. Rules" + Environment.NewLine +
             "\t" + "4. Play Round" + Environment.NewLine +
-            "\t" + "5. Quit" + Environment.NewLine);
+            "\t" + "5. View Current Game Results" + Environment.NewLine +
+            "\t" + "6. View Past Game Results" + Environment.NewLine +
+            "\t" + "7. Quit" + Environment.NewLine);
 
             Console.WriteLine();
             Console.WriteLine();
@@ -187,16 +194,20 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     break;
                 case '2':
                     menuChoice = MenuOption.SignIn;
-                    SignIn();
                     break;
                 case '3':
                     menuChoice = MenuOption.GameRules;
-                    DisplayGameRules();
                     break;
                 case '4':
                     menuChoice = MenuOption.PlayNewRound;
                     break;
                 case '5':
+                    menuChoice = MenuOption.ViewCurrentGameResults;
+                    break;
+                case '6':
+                    menuChoice = MenuOption.ViewCurrentGameResults;
+                    break;
+                case '7':
                     menuChoice = MenuOption.Quit;
                     break;
                 default:
@@ -206,7 +217,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             return menuChoice;
         }
 
-        private void DisplayGameRules()
+        public void DisplayGameRules()
         {
             ConsoleUtil.DisplayReset();
             ConsoleUtil.HeaderText = "Rules for Tic-Tac-Toe";
