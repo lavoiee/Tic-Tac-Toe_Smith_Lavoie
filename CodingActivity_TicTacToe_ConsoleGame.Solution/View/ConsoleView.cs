@@ -170,10 +170,8 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             "\t" + "1. Create Account" + Environment.NewLine +
             "\t" + "2. Sign In" + Environment.NewLine +
             "\t" + "3. Rules" + Environment.NewLine +
-            //"\t" + "4. View Current Game Stats" + Environment.NewLine +
-            //"\t" + "5. View Historic Game Stats" + Environment.NewLine +
-            "\t" + "5. Play Round" + Environment.NewLine +
-            "\t" + "6. Quit" + Environment.NewLine);
+            "\t" + "4. Play Round" + Environment.NewLine +
+            "\t" + "5. Quit" + Environment.NewLine);
 
             Console.WriteLine();
             Console.WriteLine();
@@ -195,10 +193,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     menuChoice = MenuOption.GameRules;
                     DisplayGameRules();
                     break;
-                case '5':
+                case '4':
                     menuChoice = MenuOption.PlayNewRound;
                     break;
-                case '6':
+                case '5':
                     menuChoice = MenuOption.Quit;
                     break;
                 default:
