@@ -187,7 +187,6 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 case ConsoleView.ViewState.Active:
 
                     _gameView.DisplayGameArea();
-                    _gameView.DisplayMenuFooter();
 
 
                     switch (_gameboard.CurrentRoundState)

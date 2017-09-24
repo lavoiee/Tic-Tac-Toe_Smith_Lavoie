@@ -200,9 +200,11 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                     break;
                 case '2':
                     menuChoice = MenuOption.SignIn;
+                    SignIn();
                     break;
                 case '3':
                     menuChoice = MenuOption.GameRules;
+                    DisplayGameRules();
                     break;
                 case '4':
                     menuChoice = MenuOption.ViewCurrentGameResults;
@@ -221,6 +223,16 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             }
 
             return menuChoice;
+        }
+
+        private void DisplayGameRules()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void SignIn()
+        {
+            throw new NotImplementedException();
         }
 
         private void CreateAccount()
