@@ -21,6 +21,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
         #endregion
 
         #region FIELDS
+        
 
         private const int GAMEBOARD_VERTICAL_LOCATION = 13; //3
 
@@ -253,7 +254,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             {
 
             }
-            catch (NotImplementedException)
+            catch ()
             {
 
             }

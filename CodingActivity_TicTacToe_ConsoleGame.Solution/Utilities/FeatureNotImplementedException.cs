@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodingActivity_TicTacToe_ConsoleGame.Utilities
 {
-    class FeatureNotImplementedException : Exception
+    public class FeatureNotImplementedException : Exception
     {
         public FeatureNotImplementedException()
         {
