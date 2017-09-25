@@ -187,6 +187,9 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 else
                 {
                     _playingGame = false;
+                    //_gameView.DisplayClosingScreen();
+                    _gameView.DisplayExitPrompt();
+
                 }
             }
 

@@ -262,7 +262,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             {
 
             }
-            catch ()
+            catch (NotImplementedException)
             {
 
             }
