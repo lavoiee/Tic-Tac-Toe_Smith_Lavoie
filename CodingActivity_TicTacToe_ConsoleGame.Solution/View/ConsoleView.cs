@@ -243,11 +243,19 @@ namespace CodingActivity_TicTacToe_ConsoleGame
                 "\t" + "then a cat's game or a draw occurs." + Environment.NewLine);
         }
 
+        //
+        // Consider using a user defined exception to catch when a user attempts to sign in when they are 
+        // already signed in.
+        //
         private void SignIn()
         {
             
         }
 
+        //
+        // Consider using a user defined exception to catch when a user attempts to create an account that 
+        // already exists.
+        //
         public void CreateAccount()
         {
             try
