@@ -63,6 +63,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             {
                 case MenuOption.None:
                     break;
+                case MenuOption.CreateAccount:
+                    _gameView.CreateAccount();
+                    DisplayMenu();
+                    break;
                 case MenuOption.PlayNewRound:
                     InitializeGame();
                     PlayGame();

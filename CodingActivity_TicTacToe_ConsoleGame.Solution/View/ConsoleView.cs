@@ -154,6 +154,10 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             DisplayContinuePrompt();
         }
 
+        /// <summary>
+        /// Displays the Main Menu
+        /// </summary>
+        /// <returns>enum</returns>
         public MenuOption DisplayGetMenuChoice()
         {
             MenuOption menuChoice = MenuOption.None;
@@ -161,7 +165,7 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             Console.WriteLine();
 
             ConsoleUtil.DisplayReset();
-            ConsoleUtil.HeaderText = "Menu Choice";
+            ConsoleUtil.HeaderText = "Main Menu"; ;
 
             Console.CursorVisible = true;
 
@@ -169,9 +173,12 @@ namespace CodingActivity_TicTacToe_ConsoleGame
 
 
             Console.WriteLine();
+            
+            Console.WriteLine("*******************************************************************************");
+            ConsoleUtil.DisplayMessage(ConsoleUtil.Center(" Main Menu "));
+            Console.WriteLine("*******************************************************************************");
+
             Console.WriteLine(
-
-
             "\t" + "1. Create Account" + Environment.NewLine +
             "\t" + "2. Sign In" + Environment.NewLine +
             "\t" + "3. Rules" + Environment.NewLine +
@@ -190,7 +197,6 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             {
                 case '1':
                     menuChoice = MenuOption.CreateAccount;
-                    CreateAccount();
                     break;
                 case '2':
                     menuChoice = MenuOption.SignIn;
@@ -217,6 +223,9 @@ namespace CodingActivity_TicTacToe_ConsoleGame
             return menuChoice;
         }
 
+        /// <summary>
+        /// Displays the rules of the game
+        /// </summary>
         public void DisplayGameRules()
         {
             ConsoleUtil.DisplayReset();
@@ -235,12 +244,26 @@ namespace CodingActivity_TicTacToe_ConsoleGame
 
         private void SignIn()
         {
-            throw new NotImplementedException();
+            
         }
 
-        private void CreateAccount()
+        public void CreateAccount()
         {
-            throw new NotImplementedException();
+            try
+            {
+
+            }
+            catch (NotImplementedException)
+            {
+
+            }
+            finally
+            {
+                ConsoleUtil.DisplayReset();
+                Console.WriteLine();
+                ConsoleUtil.DisplayMessage("This part of the application is still under construction.");
+                DisplayContinuePrompt();
+            }
         }
 
         /// <summary>
